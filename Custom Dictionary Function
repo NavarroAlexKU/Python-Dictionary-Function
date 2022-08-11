@@ -1,0 +1,19 @@
+# create a dictionary function:
+def dict_creation_function(keys=[], values=[]):
+    # create an empty dictionary:
+    res = {}
+    # iterate through keys:
+    for k in keys:
+        # iterate through values:
+        for v in values:
+            # set first key equal to first value:
+            res[k] = v
+            # remove the value from the value list:
+            values.remove(v)
+            # break
+            break
+    # return function:
+    return res
+
+my_dict = dict_creation_function([1,2,3],['apples', 'oranges', 'grapes'])
+my_dict
